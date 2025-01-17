@@ -57,7 +57,7 @@ cover/
 *.pot
 
 # Django stuff:
-*.log
+*.log*
 local_settings.py
 db.sqlite3
 db.sqlite3-journal
@@ -177,6 +177,7 @@ cython_debug/
 !.vscode/launch.json
 !.vscode/extensions.json
 !.vscode/*.code-snippets
+!.vscode/cspell.json
 
 # Local History for Visual Studio Code
 .history/

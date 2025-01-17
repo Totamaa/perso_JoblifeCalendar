@@ -1,0 +1,404 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:ics.py - http://git.io/lLljaA
+BEGIN:VEVENT
+DESCRIPTION:Video Game: [LoL] league-of-legends\nPatch: 12.2.1\nLeague: LFL Division 2\nTournament: [Tier d] league-of-legends-lfl-division-2-spring-2022-regular-season (Regular Season)\nMatch: joblife-vs-team-mces-2022-02-07\nTeam 1: [FR] Joblife (JL)\nTeam 2: [FR] Team MCES (MCES)\n
+DURATION:PT1H
+LOCATION:http://twitch.tv/mgg_fr
+DTSTART:20220207T192808Z
+SUMMARY:[LFL Division 2] Joblife - Team MCES (Regular Season BO1)
+UID:474375404385622341@esport_calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Video Game: [LoL] league-of-legends\nPatch: 12.13.1\nLeague: LFL Division 2\nTournament: [Tier d] league-of-legends-lfl-division-2-summer-2022-regular-season (Regular Season)\nMatch: joblife-vs-bk-rog-esports-2022-07-25\nTeam 1: [FR] Joblife (JL)\nTeam 2: [FR] BK ROG Esports (BKR)\n
+DURATION:PT1H
+LOCATION:https://www.twitch.tv/mgg_fr
+DTSTART:20220725T180947Z
+SUMMARY:[LFL Division 2] Joblife - BK ROG Esports (Regular Season BO1)
+UID:474381844704641279@esport_calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Video Game: [LoL] league-of-legends\nPatch: 12.1.1\nLeague: LFL Division 2\nTournament: [Tier d] league-of-legends-lfl-division-2-spring-2022-regular-season (Regular Season)\nMatch: fc-nantes-esports-vs-joblife-2022-01-17\nTeam 1: [FR] FC Nantes Esports (FCN)\nTeam 2: [FR] Joblife (JL)\n
+DURATION:PT1H
+LOCATION:http://twitch.tv/mgg_fr
+DTSTART:20220117T161100Z
+SUMMARY:[LFL Division 2] FC Nantes Esports - Joblife (Regular Season BO1)
+UID:474375404385622308@esport_calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Video Game: [LoL] league-of-legends\nPatch: 12.10.1\nLeague: LFL Division 2\nTournament: [Tier d] league-of-legends-lfl-division-2-summer-2022-regular-season (Regular Season)\nMatch: begenius-esc-vs-joblife-2022-06-06\nTeam 1: [FR] beGenius ESC (BGN)\nTeam 2: [FR] Joblife (JL)\n
+DURATION:PT1H
+LOCATION:https://www.twitch.tv/mgg_fr
+DTSTART:20220606T160834Z
+SUMMARY:[LFL Division 2] beGenius ESC - Joblife (Regular Season BO1)
+UID:474381844704634495@esport_calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Video Game: [LoL] league-of-legends\nPatch: 13.1.1\nLeague: LFL Division 2\nTournament: [Tier d] league-of-legends-lfl-division-2-spring-2023-regular-season (Regular Season)\nMatch: joblife-vs-akroma-2023-01-27\nTeam 1: [FR] Joblife (JL)\nTeam 2: [FR] Akroma (AKR)\n
+DURATION:PT1H
+LOCATION:https://www.twitch.tv/otplol_
+DTSTART:20230127T210842Z
+SUMMARY:[LFL Division 2] Joblife - Akroma (Regular Season BO1)
+UID:474396825465712363@esport_calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Video Game: [LoL] league-of-legends\nPatch: 12.2.1\nLeague: LFL Division 2\nTournament: [Tier d] league-of-legends-lfl-division-2-spring-2022-regular-season (Regular Season)\nMatch: izi-dream-vs-joblife-2022-02-02\nTeam 1: [FR] IZI Dream (IZI)\nTeam 2: [FR] Joblife (JL)\n
+DURATION:PT1H
+LOCATION:http://twitch.tv/mgg_fr
+DTSTART:20220202T145600Z
+SUMMARY:[LFL Division 2] IZI Dream - Joblife (Regular Season BO1)
+UID:474375404385622337@esport_calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Video Game: [LoL] league-of-legends\nPatch: 13.1.1\nLeague: LFL Division 2\nTournament: [Tier d] league-of-legends-lfl-division-2-spring-2023-regular-season (Regular Season)\nMatch: project-conquerors-vs-joblife-2023-01-24\nTeam 1: [FR] Project Conquerors (PCS)\nTeam 2: [FR] Joblife (JL)\n
+DURATION:PT1H
+LOCATION:https://www.twitch.tv/otplol_
+DTSTART:20230124T190901Z
+SUMMARY:[LFL Division 2] Project Conquerors - Joblife (Regular Season BO1)
+UID:474396825465712359@esport_calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Video Game: [LoL] league-of-legends\nPatch: 12.3.1\nLeague: LFL Division 2\nTournament: [Tier d] league-of-legends-lfl-division-2-spring-2022-regular-season (Regular Season)\nMatch: fc-nantes-esports-vs-joblife-2022-02-15\nTeam 1: [FR] FC Nantes Esports (FCN)\nTeam 2: [FR] Joblife (JL)\n
+DURATION:PT1H
+LOCATION:http://twitch.tv/mgg_fr
+DTSTART:20220215T180108Z
+SUMMARY:[LFL Division 2] FC Nantes Esports - Joblife (Regular Season BO1)
+UID:474375404385622354@esport_calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Video Game: [LoL] league-of-legends\nPatch: 12.12.1\nLeague: LFL Division 2\nTournament: [Tier d] league-of-legends-lfl-division-2-summer-2022-regular-season (Regular Season)\nMatch: joblife-vs-izi-dream-2022-07-08\nTeam 1: [FR] Joblife (JL)\nTeam 2: [FR] IZI Dream (IZI)\n
+DURATION:PT1H
+LOCATION:https://www.twitch.tv/mgg_fr
+DTSTART:20220708T185209Z
+SUMMARY:[LFL Division 2] Joblife - IZI Dream (Regular Season BO1)
+UID:474381844704640762@esport_calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Video Game: [LoL] league-of-legends\nPatch: 12.4.1\nLeague: LFL Division 2\nTournament: [Tier d] league-of-legends-lfl-division-2-spring-2022-regular-season (Regular Season)\nMatch: joblife-vs-izi-dream-2022-03-01\nTeam 1: [FR] Joblife (JL)\nTeam 2: [FR] IZI Dream (IZI)\n
+DURATION:PT1H
+LOCATION:http://twitch.tv/mgg_fr
+DTSTART:20220301T193534Z
+SUMMARY:[LFL Division 2] Joblife - IZI Dream (Regular Season BO1)
+UID:474375404385624360@esport_calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Video Game: [LoL] league-of-legends\nPatch: 13.1.1\nLeague: LFL Division 2\nTournament: [Tier d] league-of-legends-lfl-division-2-spring-2023-regular-season (Regular Season)\nMatch: begenius-esc-vs-joblife-2023-02-14\nTeam 1: [FR] beGenius ESC (BGN)\nTeam 2: [FR] Joblife (JL)\n
+DURATION:PT1H
+LOCATION:https://www.twitch.tv/otplol_
+DTSTART:20230214T195917Z
+SUMMARY:[LFL Division 2] beGenius ESC - Joblife (Regular Season BO1)
+UID:474396825465722233@esport_calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Video Game: [LoL] league-of-legends\nPatch: 12.12.1\nLeague: LFL Division 2\nTournament: [Tier d] league-of-legends-lfl-division-2-summer-2022-regular-season (Regular Season)\nMatch: joblife-vs-lille-esport-2022-07-20\nTeam 1: [FR] Joblife (JL)\nTeam 2: [FR] Lille Esport (LIL)\n
+DURATION:PT1H
+LOCATION:https://www.twitch.tv/mgg_fr
+DTSTART:20220720T160157Z
+SUMMARY:[LFL Division 2] Joblife - Lille Esport (Regular Season BO1)
+UID:474381844704641272@esport_calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Video Game: [LoL] league-of-legends\nPatch: 12.18.1\nLeague: Coupe de France\nTournament: [Tier d] league-of-legends-coupe-de-france-2022-playoffs (Playoffs)\nMatch: atletec-vs-joblife-2022-10-17\nTeam 1: [FR] Atletec (ATL)\nTeam 2: [FR] Joblife (JL)\n
+DURATION:PT2H
+LOCATION:https://www.twitch.tv/otplol_
+DTSTART:20221017T151241Z
+SUMMARY:[Coupe de France] Atletec - Joblife (Playoffs BO3)
+UID:488891755193659323@esport_calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Video Game: [LoL] league-of-legends\nPatch: 13.1.1\nLeague: LFL Division 2\nTournament: [Tier d] league-of-legends-lfl-division-2-spring-2023-regular-season (Regular Season)\nMatch: atletec-vs-joblife-2023-01-10\nTeam 1: [FR] Atletec (ATL)\nTeam 2: [FR] Joblife (JL)\n
+DURATION:PT1H
+LOCATION:https://www.twitch.tv/otplol_
+DTSTART:20230110T201648Z
+SUMMARY:[LFL Division 2] Atletec - Joblife (Regular Season BO1)
+UID:474396825465701548@esport_calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Video Game: [LoL] league-of-legends\nPatch: 12.12.1\nLeague: LFL Division 2\nTournament: [Tier d] league-of-legends-lfl-division-2-summer-2022-regular-season (Regular Season)\nMatch: joblife-vs-pcs-taran-2022-07-19\nTeam 1: [FR] Joblife (JL)\nTeam 2: [FR] PCS Taran (PCS.T)\n
+DURATION:PT1H
+LOCATION:https://www.twitch.tv/mgg_fr
+DTSTART:20220719T170602Z
+SUMMARY:[LFL Division 2] Joblife - PCS Taran (Regular Season BO1)
+UID:474381844704641268@esport_calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Video Game: [LoL] league-of-legends\nPatch: 12.12.1\nLeague: LFL Division 2\nTournament: [Tier d] league-of-legends-lfl-division-2-summer-2022-regular-season (Regular Season)\nMatch: tony-parker-adequat-academy-vs-joblife-2022-07-18\nTeam 1: [FR] Tony Parker Adequat Academy (TPAA)\nTeam 2: [FR] Joblife (JL)\n
+DURATION:PT1H
+LOCATION:https://www.twitch.tv/mgg_fr
+DTSTART:20220718T180250Z
+SUMMARY:[LFL Division 2] Tony Parker Adequat Academy - Joblife (Regular Season BO1)
+UID:474381844704641264@esport_calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Video Game: [LoL] league-of-legends\nPatch: 12.9.1\nLeague: LFL Division 2\nTournament: [Tier d] league-of-legends-lfl-division-2-summer-2022-regular-season (Regular Season)\nMatch: atletec-vs-joblife-2022-05-30\nTeam 1: [FR] Atletec (ATL)\nTeam 2: [FR] Joblife (JL)\n
+DURATION:PT1H
+LOCATION:https://www.twitch.tv/mgg_fr
+DTSTART:20220530T191908Z
+SUMMARY:[LFL Division 2] Atletec - Joblife (Regular Season BO1)
+UID:474381844704634484@esport_calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Video Game: [LoL] league-of-legends\nPatch: 12.12.1\nLeague: LFL Division 2\nTournament: [Tier d] league-of-legends-lfl-division-2-summer-2022-regular-season (Regular Season)\nMatch: team-mces-vs-joblife-2022-07-12\nTeam 1: [FR] Team MCES (MCES)\nTeam 2: [FR] Joblife (JL)\n
+DURATION:PT1H
+LOCATION:https://www.twitch.tv/mgg_fr
+DTSTART:20220712T185257Z
+SUMMARY:[LFL Division 2] Team MCES - Joblife (Regular Season BO1)
+UID:474381844704641260@esport_calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Video Game: [LoL] league-of-legends\nPatch: 12.1.1\nLeague: LFL Division 2\nTournament: [Tier d] league-of-legends-lfl-division-2-spring-2022-regular-season (Regular Season)\nMatch: joblife-vs-lille-esport-2022-01-25\nTeam 1: [FR] Joblife (JL)\nTeam 2: [FR] Lille Esport (LIL)\n
+DURATION:PT1H
+LOCATION:http://twitch.tv/mgg_fr
+DTSTART:20220125T194635Z
+SUMMARY:[LFL Division 2] Joblife - Lille Esport (Regular Season BO1)
+UID:474375404385622326@esport_calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Video Game: [LoL] league-of-legends\nPatch: 12.12.1\nLeague: LFL Division 2\nTournament: [Tier d] league-of-legends-lfl-division-2-summer-2022-regular-season (Regular Season)\nMatch: joblife-vs-atletec-2022-07-04\nTeam 1: [FR] Joblife (JL)\nTeam 2: [FR] Atletec (ATL)\n
+DURATION:PT1H
+LOCATION:https://www.twitch.tv/mgg_fr
+DTSTART:20220704T181838Z
+SUMMARY:[LFL Division 2] Joblife - Atletec (Regular Season BO1)
+UID:474381844704638083@esport_calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Video Game: [LoL] league-of-legends\nPatch: 12.3.1\nLeague: LFL Division 2\nTournament: [Tier d] league-of-legends-lfl-division-2-spring-2022-regular-season (Regular Season)\nMatch: joblife-vs-pcs-taran-2022-02-22\nTeam 1: [FR] Joblife (JL)\nTeam 2: [FR] PCS Taran (PCS.T)\n
+DURATION:PT1H
+LOCATION:http://twitch.tv/mgg_fr
+DTSTART:20220222T175621Z
+SUMMARY:[LFL Division 2] Joblife - PCS Taran (Regular Season BO1)
+UID:474375404385623492@esport_calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Video Game: [LoL] league-of-legends\nPatch: 12.3.1\nLeague: LFL Division 2\nTournament: [Tier d] league-of-legends-lfl-division-2-spring-2022-regular-season (Regular Season)\nMatch: joblife-vs-begenius-esc-2022-02-14\nTeam 1: [FR] Joblife (JL)\nTeam 2: [FR] beGenius ESC (BGN)\n
+DURATION:PT1H
+LOCATION:http://twitch.tv/mgg_fr
+DTSTART:20220214T195949Z
+SUMMARY:[LFL Division 2] Joblife - beGenius ESC (Regular Season BO1)
+UID:474375404385622351@esport_calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Video Game: [LoL] league-of-legends\nPatch: 13.1.1\nLeague: LFL Division 2\nTournament: [Tier d] league-of-legends-lfl-division-2-spring-2023-regular-season (Regular Season)\nMatch: viv-esport-vs-joblife-2023-02-07\nTeam 1: [FR] ViV Esport (VIV)\nTeam 2: [FR] Joblife (JL)\n
+DURATION:PT1H
+LOCATION:https://www.twitch.tv/otplol_
+DTSTART:20230207T192152Z
+SUMMARY:[LFL Division 2] ViV Esport - Joblife (Regular Season BO1)
+UID:474396825465712377@esport_calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Video Game: [LoL] league-of-legends\nPatch: 12.11.1\nLeague: LFL Division 2\nTournament: [Tier d] league-of-legends-lfl-division-2-summer-2022-regular-season (Regular Season)\nMatch: bk-rog-esports-vs-joblife-2022-06-27\nTeam 1: [FR] BK ROG Esports (BKR)\nTeam 2: [FR] Joblife (JL)\n
+DURATION:PT1H
+LOCATION:https://www.twitch.tv/mgg_fr
+DTSTART:20220627T200917Z
+SUMMARY:[LFL Division 2] BK ROG Esports - Joblife (Regular Season BO1)
+UID:474381844704638075@esport_calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Video Game: [LoL] league-of-legends\nPatch: 13.1.1\nLeague: LFL Division 2\nTournament: [Tier d] league-of-legends-lfl-division-2-spring-2023-regular-season (Regular Season)\nMatch: team-du-sud-vs-joblife-2023-01-13\nTeam 1: [FR] Team du Sud (TDS)\nTeam 2: [FR] Joblife (JL)\n
+DURATION:PT1H
+LOCATION:https://www.twitch.tv/otplol_
+DTSTART:20230113T194712Z
+SUMMARY:[LFL Division 2] Team du Sud - Joblife (Regular Season BO1)
+UID:474396825465701557@esport_calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Video Game: [LoL] league-of-legends\nPatch: 12.11.1\nLeague: LFL Division 2\nTournament: [Tier d] league-of-legends-lfl-division-2-summer-2022-regular-season (Regular Season)\nMatch: lille-esport-vs-joblife-2022-06-20\nTeam 1: [FR] Lille Esport (LIL)\nTeam 2: [FR] Joblife (JL)\n
+DURATION:PT1H
+LOCATION:https://www.twitch.tv/mgg_fr
+DTSTART:20220620T170736Z
+SUMMARY:[LFL Division 2] Lille Esport - Joblife (Regular Season BO1)
+UID:474381844704638067@esport_calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Video Game: [LoL] league-of-legends\nPatch: 12.10.1\nLeague: LFL Division 2\nTournament: [Tier d] league-of-legends-lfl-division-2-summer-2022-regular-season (Regular Season)\nMatch: pcs-taran-vs-joblife-2022-06-14\nTeam 1: [FR] PCS Taran (PCS.T)\nTeam 2: [FR] Joblife (JL)\n
+DURATION:PT1H
+LOCATION:https://www.twitch.tv/mgg_fr
+DTSTART:20220614T180044Z
+SUMMARY:[LFL Division 2] PCS Taran - Joblife (Regular Season BO1)
+UID:474381844704638063@esport_calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Video Game: [LoL] league-of-legends\nPatch: 12.2.1\nLeague: LFL Division 2\nTournament: [Tier d] league-of-legends-lfl-division-2-spring-2022-regular-season (Regular Season)\nMatch: bk-rog-esports-vs-joblife-2022-01-31\nTeam 1: [FR] BK ROG Esports (BKR)\nTeam 2: [FR] Joblife (JL)\n
+DURATION:PT1H
+LOCATION:http://twitch.tv/mgg_fr
+DTSTART:20220131T193924Z
+SUMMARY:[LFL Division 2] BK ROG Esports - Joblife (Regular Season BO1)
+UID:474375404385622331@esport_calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Video Game: [LoL] league-of-legends\nPatch: 12.13.1\nLeague: LFL Division 2\nTournament: [Tier d] league-of-legends-lfl-division-2-summer-2022-playoffs (Playoffs)\nMatch: joblife-vs-tony-parker-adequat-academy-2022-08-02\nTeam 1: [FR] Joblife (JL)\nTeam 2: [FR] Tony Parker Adequat Academy (TPAA)\n
+DURATION:PT3H
+LOCATION:https://www.twitch.tv/mgg_fr
+DTSTART:20220802T160302Z
+SUMMARY:[LFL Division 2] Joblife - Tony Parker Adequat Academy (Playoffs BO5)
+UID:474386164704644304@esport_calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Video Game: [LoL] league-of-legends\nPatch: 13.1.1\nLeague: LFL Division 2\nTournament: [Tier d] league-of-legends-lfl-division-2-spring-2023-regular-season (Regular Season)\nMatch: begenius-esc-vs-joblife-2023-01-20\nTeam 1: [FR] beGenius ESC (BGN)\nTeam 2: [FR] Joblife (JL)\n
+DURATION:PT1H
+LOCATION:https://www.twitch.tv/otplol_
+DTSTART:20230120T190825Z
+SUMMARY:[LFL Division 2] beGenius ESC - Joblife (Regular Season BO1)
+UID:474396825465704036@esport_calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Video Game: [LoL] league-of-legends\nPatch: 12.5.1\nLeague: LFL Division 2\nTournament: [Tier d] league-of-legends-lfl-division-2-spring-2022-regular-season (Regular Season)\nMatch: joblife-vs-atletec-2022-03-14\nTeam 1: [FR] Joblife (JL)\nTeam 2: [FR] Atletec (ATL)\n
+DURATION:PT1H
+LOCATION:http://twitch.tv/mgg_fr
+DTSTART:20220314T190854Z
+SUMMARY:[LFL Division 2] Joblife - Atletec (Regular Season BO1)
+UID:474375404385625998@esport_calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Video Game: [LoL] league-of-legends\nPatch: 12.10.1\nLeague: LFL Division 2\nTournament: [Tier d] league-of-legends-lfl-division-2-summer-2022-regular-season (Regular Season)\nMatch: joblife-vs-team-mces-2022-06-07\nTeam 1: [FR] Joblife (JL)\nTeam 2: [FR] Team MCES (MCES)\n
+DURATION:PT1H
+LOCATION:https://www.twitch.tv/mgg_fr
+DTSTART:20220607T160456Z
+SUMMARY:[LFL Division 2] Joblife - Team MCES (Regular Season BO1)
+UID:474381844704634502@esport_calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Video Game: [LoL] league-of-legends\nPatch: 12.13.1\nLeague: LFL Division 2\nTournament: [Tier d] league-of-legends-lfl-division-2-summer-2022-regular-season (Regular Season)\nMatch: joblife-vs-fc-nantes-esports-2022-07-26\nTeam 1: [FR] Joblife (JL)\nTeam 2: [FR] FC Nantes Esports (FCN)\n
+DURATION:PT1H
+LOCATION:https://www.twitch.tv/mgg_fr
+DTSTART:20220726T194247Z
+SUMMARY:[LFL Division 2] Joblife - FC Nantes Esports (Regular Season BO1)
+UID:474381844704641286@esport_calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Video Game: [LoL] league-of-legends\nPatch: 12.4.1\nLeague: LFL Division 2\nTournament: [Tier d] league-of-legends-lfl-division-2-spring-2022-regular-season (Regular Season)\nMatch: team-mces-vs-joblife-2022-03-08\nTeam 1: [FR] Team MCES (MCES)\nTeam 2: [FR] Joblife (JL)\n
+DURATION:PT1H
+LOCATION:http://twitch.tv/mgg_fr
+DTSTART:20220308T180103Z
+SUMMARY:[LFL Division 2] Team MCES - Joblife (Regular Season BO1)
+UID:474375404385625140@esport_calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Video Game: [LoL] league-of-legends\nPatch: 13.1.1\nLeague: LFL Division 2\nTournament: [Tier d] league-of-legends-lfl-division-2-spring-2023-regular-season (Regular Season)\nMatch: joblife-vs-klanik-esports-2023-02-03\nTeam 1: [FR] Joblife (JL)\nTeam 2: [FR] Klanik Esports (KE)\n
+DURATION:PT1H
+LOCATION:https://www.twitch.tv/otplol_
+DTSTART:20230203T195904Z
+SUMMARY:[LFL Division 2] Joblife - Klanik Esports (Regular Season BO1)
+UID:474396825465712370@esport_calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Video Game: [LoL] league-of-legends\nPatch: 12.3.1\nLeague: LFL Division 2\nTournament: [Tier d] league-of-legends-lfl-division-2-spring-2022-regular-season (Regular Season)\nMatch: tony-parker-adequat-academy-vs-joblife-2022-02-21\nTeam 1: [FR] Tony Parker Adequat Academy (TPAA)\nTeam 2: [FR] Joblife (JL)\n
+DURATION:PT1H
+LOCATION:http://twitch.tv/mgg_fr
+DTSTART:20220221T200553Z
+SUMMARY:[LFL Division 2] Tony Parker Adequat Academy - Joblife (Regular Season BO1)
+UID:474375404385623489@esport_calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Video Game: [LoL] league-of-legends\nPatch: 12.2.1\nLeague: LFL Division 2\nTournament: [Tier d] league-of-legends-lfl-division-2-spring-2022-regular-season (Regular Season)\nMatch: atletec-vs-joblife-2022-02-08\nTeam 1: [FR] Atletec (ATL)\nTeam 2: [FR] Joblife (JL)\n
+DURATION:PT1H
+LOCATION:http://twitch.tv/mgg_fr
+DTSTART:20220208T175450Z
+SUMMARY:[LFL Division 2] Atletec - Joblife (Regular Season BO1)
+UID:474375404385622344@esport_calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Video Game: [LoL] league-of-legends\nPatch: 13.1.1\nLeague: LFL Division 2\nTournament: [Tier d] league-of-legends-lfl-division-2-spring-2023-regular-season (Regular Season)\nMatch: joblife-vs-lille-esport-2023-01-31\nTeam 1: [FR] Joblife (JL)\nTeam 2: [FR] Lille Esport (LIL)\n
+DURATION:PT1H
+LOCATION:https://www.twitch.tv/otplol_
+DTSTART:20230131T200809Z
+SUMMARY:[LFL Division 2] Joblife - Lille Esport (Regular Season BO1)
+UID:474396825465712366@esport_calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Video Game: [LoL] league-of-legends\nPatch: 12.4.1\nLeague: LFL Division 2\nTournament: [Tier d] league-of-legends-lfl-division-2-spring-2022-regular-season (Regular Season)\nMatch: lille-esport-vs-joblife-2022-02-28\nTeam 1: [FR] Lille Esport (LIL)\nTeam 2: [FR] Joblife (JL)\n
+DURATION:PT1H
+LOCATION:http://twitch.tv/mgg_fr
+DTSTART:20220228T185107Z
+SUMMARY:[LFL Division 2] Lille Esport - Joblife (Regular Season BO1)
+UID:474375404385624354@esport_calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Video Game: [LoL] league-of-legends\nPatch: 12.9.1\nLeague: LFL Division 2\nTournament: [Tier d] league-of-legends-lfl-division-2-summer-2022-regular-season (Regular Season)\nMatch: izi-dream-vs-joblife-2022-05-31\nTeam 1: [FR] IZI Dream (IZI)\nTeam 2: [FR] Joblife (JL)\n
+DURATION:PT1H
+LOCATION:https://www.twitch.tv/mgg_fr
+DTSTART:20220531T175800Z
+SUMMARY:[LFL Division 2] IZI Dream - Joblife (Regular Season BO1)
+UID:474381844704634490@esport_calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Video Game: [LoL] league-of-legends\nPatch: 12.5.1\nLeague: LFL Division 2\nTournament: [Tier d] league-of-legends-lfl-division-2-spring-2022-regular-season (Regular Season)\nMatch: begenius-esc-vs-joblife-2022-03-15\nTeam 1: [FR] beGenius ESC (BGN)\nTeam 2: [FR] Joblife (JL)\n
+DURATION:PT1H
+LOCATION:http://twitch.tv/mgg_fr
+DTSTART:20220315T170207Z
+SUMMARY:[LFL Division 2] beGenius ESC - Joblife (Regular Season BO1)
+UID:474375404385626001@esport_calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Video Game: [LoL] league-of-legends\nPatch: 12.10.1\nLeague: LFL Division 2\nTournament: [Tier d] league-of-legends-lfl-division-2-summer-2022-regular-season (Regular Season)\nMatch: joblife-vs-tony-parker-adequat-academy-2022-06-13\nTeam 1: [FR] Joblife (JL)\nTeam 2: [FR] Tony Parker Adequat Academy (TPAA)\n
+DURATION:PT1H
+LOCATION:https://www.twitch.tv/mgg_fr
+DTSTART:20220613T160426Z
+SUMMARY:[LFL Division 2] Joblife - Tony Parker Adequat Academy (Regular Season BO1)
+UID:474381844704638056@esport_calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Video Game: [LoL] league-of-legends\nPatch: 13.1.1\nLeague: LFL Division 2\nTournament: [Tier d] league-of-legends-lfl-division-2-spring-2023-regular-season (Regular Season)\nMatch: joblife-vs-ms-company-2023-02-10\nTeam 1: [FR] Joblife (JL)\nTeam 2: [FR] MS Company (MS)\n
+DURATION:PT1H
+LOCATION:https://www.twitch.tv/otplol_
+DTSTART:20230210T205816Z
+SUMMARY:[LFL Division 2] Joblife - MS Company (Regular Season BO1)
+UID:474396825465712383@esport_calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Video Game: [LoL] league-of-legends\nPatch: 12.1.1\nLeague: LFL Division 2\nTournament: [Tier d] league-of-legends-lfl-division-2-spring-2022-regular-season (Regular Season)\nMatch: pcs-taran-vs-joblife-2022-01-24\nTeam 1: [FR] PCS Taran (PCS.T)\nTeam 2: [FR] Joblife (JL)\n
+DURATION:PT1H
+LOCATION:http://twitch.tv/mgg_fr
+DTSTART:20220124T183101Z
+SUMMARY:[LFL Division 2] PCS Taran - Joblife (Regular Season BO1)
+UID:474375404385622320@esport_calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Video Game: [LoL] league-of-legends\nPatch: 13.1.1\nLeague: LFL Division 2\nTournament: [Tier d] league-of-legends-lfl-division-2-spring-2023-regular-season (Regular Season)\nMatch: ms-company-vs-joblife-2023-01-17\nTeam 1: [FR] MS Company (MS)\nTeam 2: [FR] Joblife (JL)\n
+DURATION:PT1H
+LOCATION:https://www.twitch.tv/otplol_
+DTSTART:20230117T205749Z
+SUMMARY:[LFL Division 2] MS Company - Joblife (Regular Season BO1)
+UID:474396825465704033@esport_calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Video Game: [LoL] league-of-legends\nPatch: 12.12.1\nLeague: LFL Division 2\nTournament: [Tier d] league-of-legends-lfl-division-2-summer-2022-regular-season (Regular Season)\nMatch: joblife-vs-begenius-esc-2022-07-11\nTeam 1: [FR] Joblife (JL)\nTeam 2: [FR] beGenius ESC (BGN)\n
+DURATION:PT1H
+LOCATION:https://www.twitch.tv/mgg_fr
+DTSTART:20220711T181120Z
+SUMMARY:[LFL Division 2] Joblife - beGenius ESC (Regular Season BO1)
+UID:474381844704641254@esport_calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Video Game: [LoL] league-of-legends\nPatch: 13.1.1\nLeague: LFL Division 2\nTournament: [Tier d] league-of-legends-lfl-division-2-spring-2023-regular-season (Regular Season)\nMatch: joblife-vs-atletec-2023-02-17\nTeam 1: [FR] Joblife (JL)\nTeam 2: [FR] Atletec (ATL)\n
+DURATION:PT1H
+LOCATION:https://www.twitch.tv/otplol_
+DTSTART:20230217T195533Z
+SUMMARY:[LFL Division 2] Joblife - Atletec (Regular Season BO1)
+UID:474396825465726466@esport_calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Video Game: [LoL] league-of-legends\nPatch: 12.11.1\nLeague: LFL Division 2\nTournament: [Tier d] league-of-legends-lfl-division-2-summer-2022-regular-season (Regular Season)\nMatch: fc-nantes-esports-vs-joblife-2022-06-28\nTeam 1: [FR] FC Nantes Esports (FCN)\nTeam 2: [FR] Joblife (JL)\n
+DURATION:PT1H
+LOCATION:https://www.twitch.tv/mgg_fr
+DTSTART:20220628T170136Z
+SUMMARY:[LFL Division 2] FC Nantes Esports - Joblife (Regular Season BO1)
+UID:474381844704638077@esport_calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Video Game: [LoL] league-of-legends\nPatch: 12.1.1\nLeague: LFL Division 2\nTournament: [Tier d] league-of-legends-lfl-division-2-spring-2022-regular-season (Regular Season)\nMatch: tony-parker-adequat-academy-vs-joblife-2022-01-18\nTeam 1: [FR] Tony Parker Adequat Academy (TPAA)\nTeam 2: [FR] Joblife (JL)\n
+DURATION:PT1H
+LOCATION:http://twitch.tv/mgg_fr
+DTSTART:20220118T192629Z
+SUMMARY:[LFL Division 2] Tony Parker Adequat Academy - Joblife (Regular Season BO1)
+UID:474375404385622316@esport_calendar
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Video Game: [LoL] league-of-legends\nPatch: 12.4.1\nLeague: LFL Division 2\nTournament: [Tier d] league-of-legends-lfl-division-2-spring-2022-regular-season (Regular Season)\nMatch: joblife-vs-bk-rog-esports-2022-03-07\nTeam 1: [FR] Joblife (JL)\nTeam 2: [FR] BK ROG Esports (BKR)\n
+DURATION:PT1H
+LOCATION:http://twitch.tv/mgg_fr
+DTSTART:20220307T194159Z
+SUMMARY:[LFL Division 2] Joblife - BK ROG Esports (Regular Season BO1)
+UID:474375404385625137@esport_calendar
+END:VEVENT
+END:VCALENDAR

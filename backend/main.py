@@ -1,9 +1,12 @@
-from fastapi import FastAPI
+import time
+
+from fastapi import FastAPI, Request
 from fastapi.concurrency import asynccontextmanager
 
 from config.settings import get_settings
 from config.logs import LoggerManager
 from api.router import api_router
+from tasks.schelduler_manager import start_scheduler, stop_scheduler
 
 def create_app() -> FastAPI:
     
@@ -18,9 +21,9 @@ def create_app() -> FastAPI:
         
     @asynccontextmanager
     async def lifespan(app: FastAPI):
-        logging.info("Start lifespan")
+        start_scheduler()
         yield
-        logging.info("Stop lifespan")
+        stop_scheduler()
     
     app = FastAPI(
         title=settings.BACK_NAME,
@@ -28,8 +31,16 @@ def create_app() -> FastAPI:
         version=settings.BACK_VERSION,
         docs_url=docs_url,
         redoc_url=redoc_url,
-        lifespan=lifespan
+        lifespan=lifespan,
     )
+    
+    @app.middleware("http")
+    async def _add_process_time_header(request: Request, call_next):
+        start_time = time.perf_counter()
+        response = await call_next(request)
+        process_time = time.perf_counter() - start_time
+        response.headers["X-Process-Time"] = str(process_time)
+        return response
     
     app.include_router(api_router, prefix="/api")
     
