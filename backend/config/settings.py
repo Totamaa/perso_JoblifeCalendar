@@ -4,14 +4,18 @@ from pydantic import Field
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
 class Settings(BaseSettings):
-    ENVIRONMENT: str = Field(..., env="ENVIRONMENT", pattern=r"^(dev|ppr|prod)$")
+    ENVIRONMENT: str = Field(pattern=r"^(dev|ppr|prod)$")
     
-    BACK_NAME: str = Field(..., env="BACK_NAME", min_length=3, max_length=15)
-    BACK_VERSION: str = Field(..., env="BACK_VERSION", pattern=r"^\d+\.\d+\.\d+$")
-    BACK_DESCRIPTION: str = Field(..., env="BACK_DESCRIPTION", min_length=3, max_length=50)
+    BACK_NAME: str = Field(min_length=3, max_length=20)
+    BACK_VERSION: str = Field(pattern=r"^\d+\.\d+\.\d+$")
+    BACK_DESCRIPTION: str = Field(min_length=3, max_length=200)
     
-    BACK_LOG_MAX_BYTES: int = Field(..., env = "BACK_LOG_MAX_BYTES")
-    BACK_BACKUP_COUNT: int = Field(..., env="BACK_BACKUP_COUNT")
+    BACK_LOG_MAX_BYTES: int
+    BACK_LOG_BACKUP_COUNT: int
+    
+    BACK_PANDA_BASE_URL: str
+    BACK_PANDA_API_KEY: str
+    BACK_PANDA_ID_JL_LOL: int
     
     model_config = SettingsConfigDict(env_file=".env")
     
