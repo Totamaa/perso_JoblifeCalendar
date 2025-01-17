@@ -1,5 +1,7 @@
-import json
-from fastapi import APIRouter
+import os
+
+from fastapi import APIRouter, HTTPException
+from fastapi.responses import FileResponse
 
 from config.logs import LoggerManager
 
@@ -7,15 +9,17 @@ router = APIRouter()
 logging = LoggerManager()
 
 @router.get(
-    "/calendar.ics"
+    "/calendar.ics",
+    response_class=FileResponse,
+    status_code=200
 )
-def get_calendar(leagueoflegend: bool = True, valorant: bool = True):
-    logging.info(f"get_calendar recieve with params {"league of legends" if leagueoflegend else ""} {"valorant" if valorant else ""}")
-    result = []
-    if leagueoflegend:
-        result.append("League of legend result")
-        
-    if valorant:
-        result.append("Valorant result")
-        
-    return json.dumps(result)
+async def get_calendar(lol: bool = True, valo: bool = True):
+    try:
+        file_path = "calendar.ics"
+        return FileResponse(
+            path=file_path,
+            media_type="text/calendar",
+            filename="calendar.ics"
+        )
+    except Exception:
+        raise HTTPException(status_code=500)

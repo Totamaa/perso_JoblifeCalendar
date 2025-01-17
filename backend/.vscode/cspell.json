@@ -1,0 +1,22 @@
+{
+    "version": "0.2",
+    "ignorePaths": [
+        "*.ics",
+        ".gitignore"
+    ],
+    "dictionaryDefinitions": [],
+    "dictionaries": [],
+    "words": [
+        "dotmap",
+        "Karmine",
+        "leagueoflegend",
+        "pandascore",
+        "Pandascore",
+        "Riotapi",
+        "slowapi",
+        "valo",
+        "valorant"
+    ],
+    "ignoreWords": [],
+    "import": []
+}

@@ -1,4 +1,6 @@
-from fastapi import FastAPI
+import time
+
+from fastapi import FastAPI, Request
 from fastapi.concurrency import asynccontextmanager
 
 from config.settings import get_settings
@@ -17,7 +19,7 @@ def create_app() -> FastAPI:
         redoc_url = "/redoc"
         
     @asynccontextmanager
-    async def lifespan(app: FastAPI):
+    async def lifespan(_app: FastAPI):
         logging.info("Start lifespan")
         yield
         logging.info("Stop lifespan")
@@ -28,8 +30,16 @@ def create_app() -> FastAPI:
         version=settings.BACK_VERSION,
         docs_url=docs_url,
         redoc_url=redoc_url,
-        lifespan=lifespan
+        lifespan=lifespan,
     )
+    
+    @app.middleware("http")
+    async def _add_process_time_header(request: Request, call_next):
+        start_time = time.perf_counter()
+        response = await call_next(request)
+        process_time = time.perf_counter() - start_time
+        response.headers["X-Process-Time"] = str(process_time)
+        return response
     
     app.include_router(api_router, prefix="/api")
     
