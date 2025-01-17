@@ -6,6 +6,7 @@ from fastapi.concurrency import asynccontextmanager
 from config.settings import get_settings
 from config.logs import LoggerManager
 from api.router import api_router
+from tasks.schelduler_manager import start_scheduler, stop_scheduler
 
 def create_app() -> FastAPI:
     
@@ -19,10 +20,10 @@ def create_app() -> FastAPI:
         redoc_url = "/redoc"
         
     @asynccontextmanager
-    async def lifespan(_app: FastAPI):
-        logging.info("Start lifespan")
+    async def lifespan(app: FastAPI):
+        start_scheduler()
         yield
-        logging.info("Stop lifespan")
+        stop_scheduler()
     
     app = FastAPI(
         title=settings.BACK_NAME,

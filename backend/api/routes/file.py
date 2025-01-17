@@ -15,7 +15,7 @@ logging = LoggerManager()
 )
 async def get_calendar(lol: bool = True, valo: bool = True):
     try:
-        file_path = "calendar.ics"
+        file_path = "static/calendar.ics"
         return FileResponse(
             path=file_path,
             media_type="text/calendar",

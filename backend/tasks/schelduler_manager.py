@@ -1,12 +1,12 @@
 from apscheduler.schedulers.background import BackgroundScheduler
 
-from services import PandascoreService
+from services import EsportCalendarService
 
 scheduler = BackgroundScheduler()
 
 def start_scheduler():
-    pandascore_service = PandascoreService()
-    scheduler.add_job(pandascore_service.ask_pandascore(), "cron", hour=4, minute=30)
+    esport_calendar_service = EsportCalendarService()
+    scheduler.add_job(esport_calendar_service.update_calendar, "interval", minutes=1)
     scheduler.start()
 
 def stop_scheduler():
