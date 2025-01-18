@@ -15,8 +15,11 @@ class EsportCalendarService:
         self.logging = LoggerManager()
         settings = get_settings()
         self.base_url = settings.BACK_PANDA_BASE_URL
-        self.team_id = settings.BACK_PANDA_ID_JL_LOL
         self.api_key = settings.BACK_PANDA_API_KEY
+        self.team_ids = [
+            settings.BACK_PANDA_ID_JL_LOL,
+            settings.BACK_PANDA_ID_JL_VALO,
+        ]
         self.static_dir = "static"  # Directory to save the .ics file
         self.ics_file_path = os.path.join(self.static_dir, "calendar.ics")  # Path to the final .ics file
         self.temp_ics_file_path = os.path.join(self.static_dir, "calendar_temp.ics")  # Temp file path for atomic update
@@ -24,9 +27,9 @@ class EsportCalendarService:
         # Ensure the static directory exists
         os.makedirs(self.static_dir, exist_ok=True)
 
-    def _fetch_upcoming_matches(self):
+    def _fetch_upcoming_matches(self, team_id):
         """ Fetch upcoming match data from the PandaScore API """
-        url = f"{self.base_url}/teams/{self.team_id}/matches?&sort=begin_at"
+        url = f"{self.base_url}/teams/{team_id}/matches?filter[status]=not_started&sort=begin_at"
         headers = {
             "Authorization": f"Bearer {self.api_key}",
             "Accept": "application/json"
@@ -46,20 +49,20 @@ class EsportCalendarService:
         for matchjson in data:
             match = Box(matchjson)
             
-            if len(match.streams_list) > 0:
-                for stream in match.streams_list:
-                    if stream.main == True:
-                        match.stream_url = stream.raw_url
-                        break
-            else:
-                match.stream_url = ""
+            stream = next(
+                (s for s in match.streams_list if s.main and s.language == 'fr'),
+                next(
+                    (s for s in match.streams_list if s.main),
+                    None
+                )
+            )
+            match.stream_url = stream.raw_url if stream else ""
                     
             matches.append({
                 "id": f"{match.league_id}{match.tournament_id}{match.serie_id}{match.id}",
                 "tournament_name": match.tournament.name,
                 "tournament_slug": match.tournament.slug,
                 "tournament_tier": match.tournament.tier,
-                "videogame_version": match.videogame_version.name,
                 "videogame_name": match.videogame.name,
                 "videogame_slug": match.videogame.slug,
                 "begin_at": match.begin_at,
@@ -100,7 +103,6 @@ class EsportCalendarService:
             # Create a detailed description with more info
             event.description = (
                 f"Video Game: [{match.videogame_name}] {match.videogame_slug}\n"
-                f"Patch: {match.videogame_version}\n"
                 f"League: {match.league_name}\n"
                 f"Tournament: [Tier {match.tournament_tier}] {match.tournament_slug} ({match.tournament_name})\n"
                 f"Match: {match.slug}\n"
@@ -115,6 +117,7 @@ class EsportCalendarService:
                 event.duration = timedelta(hours=2)
             else:
                 event.duration = timedelta(hours=1)
+                
             event.location = match.stream_url
 
             # Check if the event already exists, and update if it does
@@ -150,7 +153,11 @@ class EsportCalendarService:
     def update_calendar(self):
         """ Main method to update the calendar """
         self.logging.info("Starting calendar update process...")
-        matches = self._fetch_upcoming_matches()  # Fetch match data
+        matches = []
+        for team_id in self.team_ids:
+            self.logging.info(f"Fetching upcoming matches for team ID: {team_id}")
+            matches.extend(self._fetch_upcoming_matches(team_id))
+        self.logging.info(f"Total matches fetched: {len(matches)}")
         if matches:
             self._generate_calendar_events(matches)  # Generate events based on fetched data
             self._replace_calendar_atomically()  # Replace the old calendar with the new one

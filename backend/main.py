@@ -16,14 +16,16 @@ def create_app() -> FastAPI:
     docs_url = None
     redoc_url = None
     if settings.ENVIRONMENT != "prod":
-        docs_url = "/docs"
+        docs_url = "/"
         redoc_url = "/redoc"
         
     @asynccontextmanager
     async def lifespan(app: FastAPI):
+        logging.info("Start backend")
         start_scheduler()
         yield
         stop_scheduler()
+        logging.info("Stop backend")
     
     app = FastAPI(
         title=settings.BACK_NAME,
@@ -43,8 +45,6 @@ def create_app() -> FastAPI:
         return response
     
     app.include_router(api_router, prefix="/api")
-    
-    logging.info("Start backend")
     
     return app
 
