@@ -29,7 +29,7 @@ class EsportCalendarService:
 
     def _fetch_upcoming_matches(self, team_id):
         """ Fetch upcoming match data from the PandaScore API """
-        url = f"{self.base_url}/teams/{team_id}/matches?filter[status]=not_started&sort=begin_at"
+        url = f"{self.base_url}/teams/{team_id}/matches?&sort=begin_at"
         headers = {
             "Authorization": f"Bearer {self.api_key}",
             "Accept": "application/json"
@@ -132,10 +132,22 @@ class EsportCalendarService:
                 # Add a new event if it doesn't exist
                 self.logging.info(f"Adding event: {event.name}")
                 calendar.events.add(event)
+                
+        calendar_data = calendar.serialize()
+        calendar_data = calendar_data.replace(
+            "CALSCALE:GEORGIAN",
+            "CALSCALE:GREGORIAN"
+        )
+        
+        if "CALSCALE:GREGORIAN" not in calendar_data:
+            calendar_data = calendar_data.replace(
+                "VERSION:2.0",
+                "VERSION:2.0\nCALSCALE:GREGORIAN"
+            )
 
         # Save the generated calendar to a temporary file first
         with open(self.temp_ics_file_path, "w") as f:
-            f.write(calendar.serialize())
+            f.write(calendar_data)
         self.logging.info(f"Temporary calendar file {self.temp_ics_file_path} generated.")
 
     def _replace_calendar_atomically(self):
