@@ -29,7 +29,7 @@ class EsportCalendarService:
 
     def _fetch_upcoming_matches(self, team_id):
         """ Fetch upcoming match data from the PandaScore API """
-        url = f"{self.base_url}/teams/{team_id}/matches?&sort=begin_at"
+        url = f"{self.base_url}/teams/{team_id}/matches?filter[status]=not_started&sort=begin_at"
         headers = {
             "Authorization": f"Bearer {self.api_key}",
             "Accept": "application/json"
@@ -102,12 +102,12 @@ class EsportCalendarService:
 
             # Create a detailed description with more info
             event.description = (
-                f"Video Game: [{match.videogame_name}] {match.videogame_slug}\n"
-                f"League: {match.league_name}\n"
-                f"Tournament: [Tier {match.tournament_tier}] {match.tournament_slug} ({match.tournament_name})\n"
-                f"Match: {match.slug}\n"
-                f"Team 1: [{match.opponents_1_location}] {match.opponents_1_name} ({match.opponents_1_acronym})\n"
-                f"Team 2: [{match.opponents_2_location}] {match.opponents_2_name} ({match.opponents_2_acronym})\n"
+                f"Video Game: [{match.videogame_name}] {match.videogame_slug}\\n"
+                f"League: {match.league_name}\\n"
+                f"Tournament: [Tier {match.tournament_tier}] {match.tournament_slug} ({match.tournament_name})\\n"
+                f"Match: {match.slug}\\n"
+                f"Team 1: [{match.opponents_1_location}] {match.opponents_1_name} ({match.opponents_1_acronym})\\n"
+                f"Team 2: [{match.opponents_2_location}] {match.opponents_2_name} ({match.opponents_2_acronym})\\n"
             )
 
             event.begin = match['begin_at']  # ISO 8601 with timezone handling
