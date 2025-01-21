@@ -1,3 +1,4 @@
+import time
 import requests
 from datetime import datetime, timedelta
 import os
@@ -46,8 +47,8 @@ class EsportCalendarService:
             return []
 
         matches = []
-        for matchjson in data:
-            match = Box(matchjson)
+        for match_json in data:
+            match = Box(match_json)
             
             stream = next(
                 (s for s in match.streams_list if s.main and s.language == 'fr'),
@@ -165,6 +166,7 @@ class EsportCalendarService:
     def update_calendar(self):
         """ Main method to update the calendar """
         self.logging.info("Starting calendar update process...")
+        start_time = time.perf_counter()
         matches = []
         for team_id in self.team_ids:
             self.logging.info(f"Fetching upcoming matches for team ID: {team_id}")
@@ -173,4 +175,5 @@ class EsportCalendarService:
         if matches:
             self._generate_calendar_events(matches)  # Generate events based on fetched data
             self._replace_calendar_atomically()  # Replace the old calendar with the new one
-        self.logging.info("Calendar update process completed.")
+        process_time = time.perf_counter() - start_time
+        self.logging.info(f"Calendar update process completed. (time: {process_time})")

@@ -2,12 +2,15 @@
     "version": "0.2",
     "ignorePaths": [
         "*.ics",
-        ".gitignore"
+        ".gitignore",
+        "*.log*"
     ],
     "dictionaryDefinitions": [],
     "dictionaries": [],
     "words": [
+        "CALSCALE",
         "dotmap",
+        "Joblide",
         "Karmine",
         "leagueoflegend",
         "pandascore",

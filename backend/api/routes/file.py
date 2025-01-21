@@ -16,14 +16,15 @@ logging = LoggerManager()
     response_class=FileResponse,
     status_code=200
 )
-async def get_calendar(request: Request, lol: bool = True, valo: bool = True):
-    logging.info(f"Requesting calendar file receive with filters: lol={lol}, valo={valo}")
+async def get_calendar(request: Request):
+    logging.info("Requesting calendar receive")
     try:
         file_path = "static/calendar.ics"
+        date_format = "%a, %d %b %Y %H:%M:%S GMT"
         
         file_stat = os.stat(file_path)
         last_modified = datetime.fromtimestamp(file_stat.st_mtime)
-        last_modified_str = last_modified.strftime("%a, %d %b %Y %H:%M:%S GMT")
+        last_modified_str = last_modified.strftime(date_format)
         
         etag = hashlib.md5(f"{file_stat.st_mtime}:{file_stat.st_size}".encode()).hexdigest()
         
@@ -31,7 +32,7 @@ async def get_calendar(request: Request, lol: bool = True, valo: bool = True):
         if_modified_since = request.headers.get("if-modified-since")
         
         if (if_none_match and if_none_match == etag) or \
-           (if_modified_since and datetime.strptime(if_modified_since, "%a, %d %b %Y %H:%M:%S GMT") >= last_modified):
+           (if_modified_since and datetime.strptime(if_modified_since, date_format) >= last_modified):
             return Response(status_code=status.HTTP_304_NOT_MODIFIED)
         
         response = FileResponse(
@@ -40,9 +41,9 @@ async def get_calendar(request: Request, lol: bool = True, valo: bool = True):
             filename="calendar.ics"
         )
         
-        cache_duration = timedelta(minutes=5)
+        cache_duration = timedelta(minutes=1)
         response.headers["Cache-Control"] = f"public, max-age={int(cache_duration.total_seconds())}"
-        response.headers["Expires"] = (datetime.now() + cache_duration).strftime("%a, %d %b %Y %H:%M:%S GMT")
+        response.headers["Expires"] = (datetime.now() + cache_duration).strftime(date_format)
         
         response.headers["ETag"] = etag
         response.headers["Last-Modified"] = last_modified_str
