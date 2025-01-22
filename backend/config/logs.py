@@ -46,6 +46,12 @@ class LoggerManager:
         print(message)
         logger.error(message)
         self._close_handler(logger, handler)
+        
+    def debug(self, message):
+        logger, handler = self._get_logger()
+        print(message)
+        logger.debug(message)
+        self._close_handler(logger, handler)
 
     def _close_handler(self, logger, handler):
         handler.close()

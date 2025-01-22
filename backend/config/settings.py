@@ -10,6 +10,8 @@ class Settings(BaseSettings):
     BACK_VERSION: str = Field(pattern=r"^\d+\.\d+\.\d+$")
     BACK_DESCRIPTION: str = Field(min_length=3, max_length=200)
     
+    BACK_CACHE_DURATION: int
+    
     BACK_LOG_MAX_BYTES: int
     BACK_LOG_BACKUP_COUNT: int
     
