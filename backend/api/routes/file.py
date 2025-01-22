@@ -7,9 +7,11 @@ from fastapi import APIRouter, HTTPException, Response, status, Request
 from fastapi.responses import FileResponse
 
 from config.logs import LoggerManager
+from config.settings import get_settings
 
 router = APIRouter()
 logging = LoggerManager()
+settings = get_settings()
 
 @router.get(
     "/calendar.ics",
@@ -41,7 +43,7 @@ async def get_calendar(request: Request):
             filename="calendar.ics"
         )
         
-        cache_duration = timedelta(minutes=1)
+        cache_duration = timedelta(minutes=settings.BACK_CACHE_DURATION)
         response.headers["Cache-Control"] = f"public, max-age={int(cache_duration.total_seconds())}"
         response.headers["Expires"] = (datetime.now() + cache_duration).strftime(date_format)
         

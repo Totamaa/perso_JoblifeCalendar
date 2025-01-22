@@ -8,17 +8,25 @@
     "dictionaryDefinitions": [],
     "dictionaries": [],
     "words": [
+        "calname",
+        "calscale",
         "CALSCALE",
         "dotmap",
+        "dtstart",
+        "Esports",
+        "ical",
         "Joblide",
+        "joblife",
         "Karmine",
         "leagueoflegend",
         "pandascore",
         "Pandascore",
+        "prodid",
         "Riotapi",
         "slowapi",
         "valo",
-        "valorant"
+        "valorant",
+        "vevent"
     ],
     "ignoreWords": [],
     "import": []
