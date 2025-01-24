@@ -56,7 +56,7 @@ class EsportCalendarService:
             )
             match.stream_url = stream.raw_url if stream else ""
 
-            match.stream_url = f"https://www.twitch.tv/jltomy {f'(officiel: {match.stream_url})' if match.stream_url != "" else ""}"
+            match.stream_url = f"https://www.twitch.tv/jltomy (official: {match.stream_url})" if match.stream_url else "https://www.twitch.tv/jltomy"
             
             matches.append({
                 "id": f"{match.league_id}{match.tournament_id}{match.serie_id}{match.id}",
