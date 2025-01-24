@@ -55,6 +55,8 @@ class EsportCalendarService:
                 next((s for s in match.streams_list if s.main), None)
             )
             match.stream_url = stream.raw_url if stream else ""
+
+            match.stream_url = f"https://www.twitch.tv/jltomy (official: {match.stream_url})" if match.stream_url else "https://www.twitch.tv/jltomy"
             
             matches.append({
                 "id": f"{match.league_id}{match.tournament_id}{match.serie_id}{match.id}",
@@ -152,9 +154,7 @@ class EsportCalendarService:
             event.add('duration', duration)
             
             # Ajouter l'URL du stream
-            if match.stream_url:
-                event.add('location', vText(match.stream_url))
-                event.add('url', vUri(match.stream_url))
+            event.add('location', vText(match.stream_url))
  
             # Mettre à jour ou ajouter l'événement
             if event_uid in existing_events:
